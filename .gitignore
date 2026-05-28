@@ -1,0 +1,106 @@
+# ==========================================================
+#  .gitignore para projetos Java
+#  O que este arquivo faz: lista tudo que o Git deve IGNORAR,
+#  ou seja, arquivos que ficam no seu PC mas nunca vão pro GitHub.
+#  Regra de ouro: versiona-se o codigo-fonte (.java), nao o que
+#  e gerado a partir dele (.class) nem configuracao de maquina.
+# ==========================================================
+
+
+# ----- Arquivos compilados do Java -----
+# .class e o codigo ja compilado, gerado automaticamente ao rodar.
+# Nao precisa versionar: qualquer um gera de novo compilando o .java.
+*.class
+
+# Pastas de saida de compilacao (onde os .class costumam cair)
+bin/
+build/
+out/
+target/
+
+
+# ----- Empacotamento / logs -----
+*.log
+*.ctxt
+hs_err_pid*
+replay_pid*
+
+
+# ----- VS Code -----
+# Configuracao do editor, especifica da sua maquina.
+.vscode/
+
+
+# ----- Eclipse -----
+.classpath
+.project
+.settings/
+.metadata/
+.apt_generated/
+.factorypath
+
+
+# ----- IntelliJ IDEA -----
+.idea/
+*.iml
+*.iws
+*.ipr
+
+
+# ----- NetBeans -----
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+
+# ----- Lixo do macOS -----
+# Esses aparecem quando alguem zipa pastas no Mac (foi o caso
+# dos trabalhos em grupo). Nao tem utilidade no Linux nem no GitHub.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+
+# ----- Lixo do Windows -----
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+
+# ----- Lixo do Linux -----
+# Arquivos temporarios e de backup gerados por alguns editores.
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ----- Midia pesada -----
+# Videos costumam estourar o limite de 100 MB do GitHub.
+# (Foi o que travou o seu primeiro push, com o 0330.mp4.)
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.wmv
+
+
+# ==========================================================
+#  O que este arquivo NAO ignora (de proposito):
+#  - *.java   -> seu codigo-fonte
+#  - *.pdf    -> os enunciados dos exercicios
+#  - *.md     -> os READMEs
+#  - *.txt    -> os arquivos de dados dos exercicios de arquivo
+#  - *.jar    -> bibliotecas (ex.: JUnit), caso voce as versione
+#  Se um dia quiser ignorar algum desses, e so adicionar aqui.
+# ==========================================================
