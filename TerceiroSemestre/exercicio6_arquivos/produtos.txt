@@ -1,0 +1,5 @@
+Cafe * Cafe descafeinado * 2.00 * Alimento * 10/12/2015
+Bolacha * Integral * 5.53 * Alimento * 02/04/2010
+Camiseta * Manga curta * 17.90 * Vestuario * 10
+Fogao * 4 bocas * 890.00 * Eletrodomestico * 125.00
+Geladeira * 1 porta * 560.90 * Eletrodomestico * 100.00
